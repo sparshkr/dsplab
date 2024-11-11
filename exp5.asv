@@ -38,12 +38,4 @@ N = length(xdown_f);
 subplot(3,3,4);
 stem((0:N-1)/N,abs(xdown_f));
 
-xinter = interp(xdown,2);
-N = length(xinter);
-subplot(3,3,5);
-stem(0:N-1,xinter);
-
-xinter_f = fft(xinter);
-N = length(xinter_f);
-subplot(3,3,6);
-stem((0:N-1)/N,abs(xinter_f));
+xinter = up

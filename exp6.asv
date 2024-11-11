@@ -1,0 +1,16 @@
+n = 0:7;
+x = [0 1 1 1 1 1 0 0];
+
+x1  = fft(x);
+N = length(x1);
+
+subplot(3,3,1);
+stem(n,x);
+
+subplot(3,3,2);
+stem(n,abs(x1));
+
+subplot(3,3,3);
+stem(n,angle(x1));
+
+w = 0 : 2
